@@ -16,6 +16,7 @@ def checkerOfLetters(listOfWords):
     global keyWord
 
 
+
     while countOfMistakes < 10 and countOfCorrectLetter != len(keyWord):
 
         letter = input("Введите букву: ")
@@ -172,12 +173,15 @@ def checkerOfResults(countOfCorrectLetter,countOfMistakes):
 
 
 # #Accomplishment
-keyWord = chosingWord(listOfWords)
+print("Игра: Висельница.\nВаша задача: вводить любые буквы.\nЕсли вы угадали,то буква будет выведена,в ином случае картинка будет дополнена новым элементом.\nВсего допустимо 9 ошибок.")
+print("Версия:1.1.")
 
+keyWord = chosingWord(listOfWords)
 for i in range(0,len(keyWord)):
  listOfLetters.append(" _ ")
 print(drawWord(listOfLetters))
 
 checkerOfLetters(listOfWords)
+
 
 
