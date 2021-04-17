@@ -119,7 +119,7 @@ print("Версия:1.2.")
 keyWord = chosingWord(listOfWords)
 for i in range(0,len(keyWord)):
  listOfLetters.append(" _ ")
-print(drawWord(listOfLetters))
+drawWord(listOfLetters)
 
 checkerOfLetters(listOfWords)
 
