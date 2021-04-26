@@ -2,7 +2,7 @@ import math
 
 #1
 class Sphere:
-    def __init__(self,x = 0,y = 0 ,z = 0,r = 1):
+    def __init__(self,r = 1,x = 0,y = 0 ,z = 0):
         self.xOfCentre = x
         self.yOfCentre = y
         self.zOfCentre = z
